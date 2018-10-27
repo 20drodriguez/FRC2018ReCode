@@ -30,7 +30,7 @@ public class Intake extends Subsystem {
        return true; //cubePresent;
     }
 
-    public void startIntake()
+    public void setIntake()
     {
         //mandibleSpeed.setspeed(INSERT VALUE);
     }

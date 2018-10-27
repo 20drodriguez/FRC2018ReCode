@@ -6,15 +6,13 @@ public class Drive extends Subsystem {
 
     public Drive() {
 /*
-create Gyro
-create encoderLeft as digital input
-create encoderRight as digital input
-create driveBaseLeft as talonSRX object
-create driveBaseRight as talonSRX object
+create Gyro driveGyro
+create speed controller driveBaseLeft as talonSRX object
+create speed controller driveBaseRight as talonSRX object
 
 */
 
-
+//I have no idea what the proper syntax or function calls actually are for the objects and what they return
     }
 
     @Override
@@ -22,9 +20,29 @@ create driveBaseRight as talonSRX object
 
     }
 
-    //create setSpeed function (input)
+    public void setSpeedRight(double speed)
     {
-        //setsSpeed taking input speed value
+        //driveBaseRight.setSpeed(speed)
+    }
+
+    public void setSpeedLeft(double speed)
+    {
+        //driveBaseLeft.setSpeed(speed)
+    }
+
+    public double getSpeedRight()
+    {
+        return 5.5;//driveBaseRight.speed();
+    }
+
+    public double getSpeedLeft()
+    {
+        return 5.5;//driveBaseLeft.speed();
+    }
+
+    public double getDriveGryro()
+    {
+        return 5.5;//driveGyro.value();
     }
 
 }
